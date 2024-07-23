@@ -1,0 +1,17 @@
+config:
+  sources:
+    kubernetes:
+      # Collect kubernetes logs
+      enabled: true
+  destinations:
+    # Send logs to OpenSearch
+    opensearch:
+      - address: "x.db.ondigitalocean.com"
+        index: "doks-demo"
+        user: "doadmin"
+        password: "x"
+        tls:
+          # Do not validate the server's TLS certificate.
+          peerVerify: false
+        # Send the syslog fields + the metadata from .k8s.* in JSON format
+        template: "$(format-json --scope rfc5424 --exclude DATE --key ISODATE @timestamp=${ISODATE} k8s=$(format-json .k8s.* --shift-levels 2 --exclude .k8s.log))"
