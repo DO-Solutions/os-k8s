@@ -27,6 +27,8 @@ Check it's output, you'll see lots of random logs being generated:
 
 ## Prepare AxoSysLog Collector for Installation
 
+We'll use helm to install AxoSysLog Collector and pass custom values.
+
 To configure the AxoSysLog collector with the correct address, user, and password for your OpenSearch database, follow these steps:
 
 ### Automated Script
