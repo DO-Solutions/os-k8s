@@ -6,12 +6,7 @@ In this guide we will use [AxoSysLog](https://axoflow.com/docs/axosyslog-core/in
 
 `doctl databases create opensearch-doks --engine opensearch --region lon1 --size db-s-1vcpu-2gb --num-nodes 1`
 
-Replace `lon1` with your desired region
-For a list of available size slugs, visit our [API reference documentation.](https://docs.digitalocean.com/reference/api/api-reference/#tag/Databases)
-
-### Retrieve OpenSearch Credentials
-
-`doctl databases connection <id>`
+Replace `lon1` with your desired region. For a list of available size slugs, visit our [API reference documentation.](https://docs.digitalocean.com/reference/api/api-reference/#tag/Databases)
 
 ## Generate some random logs
 
