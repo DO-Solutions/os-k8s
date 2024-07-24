@@ -57,7 +57,7 @@ echo "axoflow-demo.yaml has been updated."
 Ensure you have execute permission on your script before running it:
 `chmod +x update_axoflow_demo.sh && ./update_axoflow_demo.sh`
 
-This script will fetch the necessary information from the provided databases.json file and update your axoflow-demo.yaml file accordingly.
+This script will fetch the necessary information from your DigitalOcean account using `doctl` and update your axoflow-demo.yaml file accordingly.
 
 ### Manual Steps to Update `axoflow-demo.yaml`
 
