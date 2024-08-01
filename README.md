@@ -10,11 +10,15 @@ In this guide we will use [AxoSysLog](https://axoflow.com/docs/axosyslog-core/in
 
 Before getting started, ensure that you have the following prerequisites in place:
 
-1. **DigitalOcean Account:** You'll need access to a DigitalOcean account to create and manage your Kubernetes and OpenSearch resources.
-2. **doctl CLI:** The DigitalOcean Command Line Interface (CLI) tool, `doctl`, should be installed and configured on your local machine.
-3. **Kubernetes Cluster:** A running DigitalOcean Kubernetes (DOKS) cluster.
-4. **Helm:** The Kubernetes package manager, Helm, should be installed to manage Kubernetes applications.
-5. **Basic Knowledge:** Familiarity with Kubernetes, Helm, and DigitalOcean's managed services.
+1. **[DigitalOcean Account](https://www.digitalocean.com/):** You'll need access to a DigitalOcean account to create and manage your Kubernetes and OpenSearch resources.
+2. **[doctl CLI](https://docs.digitalocean.com/reference/doctl/how-to/install/):** The DigitalOcean Command Line Interface (CLI) tool, `doctl`, should be installed and configured on your local machine.
+3. **[Kubernetes Cluster](https://docs.digitalocean.com/products/kubernetes/):** A running DigitalOcean Kubernetes (DOKS) cluster.
+4. **[Helm](https://helm.sh/docs/intro/install/):** The Kubernetes package manager, Helm, should be installed to manage Kubernetes applications.
+5. **[Basic Knowledge](https://kubernetes.io/docs/concepts/):** Familiarity with Kubernetes, Helm, and DigitalOcean's managed services.
+
+---
+
+These links will guide users to the relevant resources to set up the prerequisites for the project.
 
 ## Use Case
 
