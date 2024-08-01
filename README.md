@@ -16,10 +16,6 @@ Before getting started, ensure that you have the following prerequisites in plac
 4. **[Helm](https://helm.sh/docs/intro/install/):** The Kubernetes package manager, Helm, should be installed to manage Kubernetes applications.
 5. **[Basic Knowledge](https://kubernetes.io/docs/concepts/):** Familiarity with Kubernetes, Helm, and DigitalOcean's managed services.
 
----
-
-These links will guide users to the relevant resources to set up the prerequisites for the project.
-
 ## Use Case
 
 This project is ideal for scenarios where you need a centralized logging solution to monitor and analyze logs from various applications running in a Kubernetes cluster. Whether you are managing a small set of applications or a large-scale infrastructure, collecting and forwarding logs to a dedicated OpenSearch cluster helps in:
