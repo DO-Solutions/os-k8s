@@ -1,6 +1,30 @@
 # Collect and Forward DigitalOcean Kubernetes (DOKS) Logs to DigitalOcean Managed OpenSearch.
 
+## Introduction
+
+This project demonstrates how to collect and forward logs from a DigitalOcean Kubernetes (DOKS) cluster to a DigitalOcean Managed OpenSearch instance using AxoSysLog, a scalable security data processor. By following this guide, you'll learn how to set up a robust logging system that captures and analyzes logs from your Kubernetes applications, making it easier to monitor, troubleshoot, and secure your infrastructure.
+
 In this guide we will use [AxoSysLog](https://axoflow.com/docs/axosyslog-core/intro/) to forward logs from a Kubernetes cluster to OpenSearch. AxoSyslog is a scalable security data processor.
+
+## Prerequisites
+
+Before getting started, ensure that you have the following prerequisites in place:
+
+1. **DigitalOcean Account:** You'll need access to a DigitalOcean account to create and manage your Kubernetes and OpenSearch resources.
+2. **doctl CLI:** The DigitalOcean Command Line Interface (CLI) tool, `doctl`, should be installed and configured on your local machine.
+3. **Kubernetes Cluster:** A running DigitalOcean Kubernetes (DOKS) cluster.
+4. **Helm:** The Kubernetes package manager, Helm, should be installed to manage Kubernetes applications.
+5. **Basic Knowledge:** Familiarity with Kubernetes, Helm, and DigitalOcean's managed services.
+
+## Use Case
+
+This project is ideal for scenarios where you need a centralized logging solution to monitor and analyze logs from various applications running in a Kubernetes cluster. Whether you are managing a small set of applications or a large-scale infrastructure, collecting and forwarding logs to a dedicated OpenSearch cluster helps in:
+
+- **Security Monitoring:** Detect and respond to security incidents by analyzing logs in real time.
+- **Troubleshooting:** Quickly identify and resolve issues within your Kubernetes applications by accessing detailed logs.
+- **Compliance:** Maintain a log of events for compliance with industry regulations.
+
+By integrating AxoSysLog with DigitalOcean Managed OpenSearch, you can efficiently process and store large volumes of logs, making it easier to extract valuable insights and maintain the health and security of your systems.
 
 ## Create OpenSearch cluster
 
@@ -116,6 +140,6 @@ Delete the pods so they are recreated and use the updated config
 
 `kubectl delete pods -l app=axosyslog-axosyslog-collector`
 
-## View logs in OpenSearch
+## Conclusion
 
-add section here about creating an index pattern, viewing and filtering the logs.
+Setting up a logging pipeline from DigitalOcean Kubernetes to OpenSearch using AxoSysLog not only centralizes your logs but also enhances your ability to monitor, analyze, and secure your applications. With the steps provided in this guide, you can quickly deploy this solution, gaining deeper visibility into your Kubernetes environment and ensuring that your infrastructure remains resilient and compliant.
